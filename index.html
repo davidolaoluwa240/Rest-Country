@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries Info</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/light.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/select.css" type="text/css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header__container container">
+        <div class="header__brand">
+          <h1>Where in the world?</h1>
+        </div>
+        <nav class="header__nav">
+          <p class="header__nav--colorMode">
+            <span class="material-icons-outlined"> dark_mode </span
+            ><span>Dark Mode</span>
+          </p>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="search-filter">
+        <div class="search-filter__container container">
+          <div class="search-filter__left">
+            <form id="search">
+              <div class="search__group">
+                <label class="search__label" for="search"
+                  ><span class="material-icons-outlined"> search </span></label
+                >
+                <input
+                  type="text"
+                  class="search__control"
+                  id="search"
+                  name="search"
+                  placeholder="Search for a country..."
+                  autocomplete="off"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="search-filter__right">
+            <div class="custom-select">
+              <div class="custom-select__selected">
+                <p>All</p>
+                <span class="material-icons-outlined"> expand_less </span>
+              </div>
+              <div class="custom-select__dropdown">
+                <div
+                  class="custom-select__dropdown--item custom-select__active"
+                  data-value="all"
+                >
+                  All
+                </div>
+                <div class="custom-select__dropdown--item" data-value="africa">
+                  Africa
+                </div>
+                <div
+                  class="custom-select__dropdown--item"
+                  data-value="americas"
+                >
+                  Americas
+                </div>
+                <div class="custom-select__dropdown--item" data-value="asia">
+                  Asia
+                </div>
+                <div class="custom-select__dropdown--item" data-value="europe">
+                  Europe
+                </div>
+                <div class="custom-select__dropdown--item" data-value="oceania">
+                  Oceania
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="countries__details--navigation d-none">
+        <div class="countries__details--navigation__container container">
+          <button class="btn countries__details--navigation__Back">
+            <span class="material-icons-outlined"> arrow_back </span>
+            <span>Back</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="countries">
+        <div class="countries__container container"></div>
+        <h3 class="message d-none">message</h3>
+        <div class="countries__details--container container d-none"></div>
+      </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/select.js"></script>
+    <script src="./assets/js/colorMode.js"></script>
+  </body>
+</html>

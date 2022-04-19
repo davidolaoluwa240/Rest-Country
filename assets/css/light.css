@@ -1,0 +1,9 @@
+:root {
+  --page-background: var(--light-gray-100);
+  --shadow: hsl(0, 1%, 78%);
+  --input: var(--dark-gray);
+  --txt: var(--dark-blue-300);
+  --element-bg: var(--white);
+  --label: rgba(0, 0, 0, 0.4);
+  --hover: hsl(0, 2%, 91%);
+}

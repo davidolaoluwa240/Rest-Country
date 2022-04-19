@@ -1,0 +1,9 @@
+:root {
+  --page-background: var(--dark-blue-200);
+  --shadow: hsl(209, 25%, 10%);
+  --input: var(--dark-gray);
+  --txt: var(--white);
+  --element-bg: var(--dark-blue-100);
+  --label: var(--white);
+  --hover: hsl(209, 25%, 50%);
+}
