@@ -6,4 +6,6 @@
   --element-bg: var(--white);
   --label: rgba(0, 0, 0, 0.4);
   --hover: hsl(0, 2%, 91%);
+  --btn-background: var(--white);
+  --btn-color: var(--txt);
 }
